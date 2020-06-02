@@ -1,0 +1,366 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 12px;
+	font-family: "Microsoft YaHei", "Tahoma", "Arial", '宋体';
+	line-height: 150%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	color: #656565;
+}
+
+img {
+	border: none;
+}
+
+ul, li {
+	list-style: none;
+	list-style-type: none;
+}
+
+.twelve {
+	font-size: 12px;
+}
+
+.fourth {
+	font-size: 14px;
+}
+
+.pdd_top10 {
+	padding-top: 10px;
+}
+
+.pdd_right10 {
+	padding-right: 10px;
+}
+
+.pdd_bottom10 {
+	padding-bottom: 10px;
+}
+
+.pdd_left10 {
+	padding-left: 10px;
+}
+
+.songti {
+	font-family: "Microsoft YaHei", "Tahoma", "Arial", '宋体';
+}
+
+.yinwen {
+	font-family: Arial, Helvetica, sans-serif
+}
+
+.se1 {
+	width: 160px;
+	color: #bb1414
+}
+
+.inp {
+	border: 1px solid #d2cf89;
+	text-align: left;
+	width: 160px;
+	padding: 5px 4px 0px 4px;
+	height: 24px;
+	color: #bb1414;
+	background: #656565
+}
+
+.inp2 {
+	border: 1px solid #d2cf89;
+	text-align: left;
+	width: 300px;
+	padding: 5px 4px 0px 4px;
+	height: 24px;
+	color: #bb1414;
+	background: #656565
+}
+
+.cor1 {
+	color: #bb1414
+}
+
+.btn1 {
+	FONT-SIZE: 12px;
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,
+		StartColorStr=#ffffff, EndColorStr=#9a6701);
+	CURSOR: hand;
+	COLOR: #bb1414;
+	padding: 4px 4px 1px 4px;
+	border: 1px solid #9a6701;
+}
+/* 未访问时的状态（鼠标点击前显示的状态） */
+a:link, a:visited {
+	font-size: 12px;
+	color: #656565;
+	font-weight: normal;
+	text-decoration: none;
+	font-family: "Microsoft YaHei", "Tahoma", "Arial", '宋体';
+}
+/* 鼠标悬停时的状态 */
+a:hover, a:active {
+	font-size: 12px;
+	color: #548fc9;
+	font-weight: normal;
+	text-decoration: none;
+	font-family: "Microsoft YaHei", "Tahoma", "Arial", '宋体';
+}
+
+a.black:link, a.black:visited {
+	font-size: 12px;
+	color: #000000;
+	font-weight: bold;
+	text-decoration: none;
+	font-family: "Microsoft YaHei", "Tahoma", "Arial", '宋体';
+}
+
+a.black:hover, a.black:active {
+	font-size: 12px;
+	color: #548fc9;
+	font-weight: bold;
+	text-decoration: none;
+	font-family: "Microsoft YaHei", "Tahoma", "Arial", '宋体';
+}
+
+
+/*header*/
+#header {
+	background: url(../images/main/top_r1_c5.jpg) repeat-x left bottom
+		#fbfbfb;
+	/* background:#3c8dbc; */
+	height: 65px;/**/
+	font-size: 12px;
+}
+
+/*logo位置*/
+#logo {
+	padding: 0 0 0 5px;
+	width: 66px;
+}
+
+#header-name {
+	font-size: 18px;
+	font-weight: bold;
+	/* color: #fbfbfb; */
+	padding: 6px 0 0 0;
+}
+#kscz a.ks {
+	background: url(../images/kscz。png") 50% 50%;
+	padding: 0 10px 0 20px;
+	font-size: 16px;
+}
+#header-admin {
+	font-size: 14px;
+	padding: 0 0 25px 0;
+	width: 112px;
+	color: #999
+}
+
+#header-right {
+	padding: 3px 10px 0 0;
+	font-size: 12px;
+}
+
+#header-right span, #header-right a {
+	float: right;
+}
+
+#header-right span {
+	background: url(../images/main/time.jpg) no-repeat 0px 2px;
+	padding: 0 10px 0 20px;
+}
+
+#header-right a.admin-out {
+	background: url(../images/main/exit.jpg) no-repeat 0px 2px;
+	padding: 0 0px 0 20px;
+}
+
+#header-right a:hover.admin-out {
+	background: url(../images/main/exiton.jpg) no-repeat 0px 2px;
+}
+
+#header-right a.admin-home {
+	background: url(../images/main/bool.jpg) no-repeat 0px 1px;
+	padding: 0 10px 0 20px;
+}
+
+#header-right a:hover.admin-home {
+	background: url(../images/main/boolon.jpg) no-repeat 1px 2px;
+}
+
+#header-right a.admin-index {
+	background: url(../images/main/home.jpg) no-repeat 0px 1px;
+	padding: 0 10px 0 20px;
+}
+
+#header-right a:hover.admin-index {
+	background: url(../images/main/homeon.jpg) no-repeat 0px -1px;
+}
+
+
+#main-left {
+	padding: 3px 10px 10px 0;
+	font-size: 14px;
+}
+
+#main-left span, #main-left a {
+	float: left;
+}
+
+#main-left span {
+	background: url(../images/main/time.jpg) no-repeat 0px 2px;
+	padding: 0 10px 0 20px;
+}
+
+#main-left a.add {
+	background: url(../images/main/addinfoblack.png) no-repeat 0px 2px;
+	padding: 0 0px 4px 20px;
+}
+
+#main-left a:hover.add {
+	background: url(../images/main/addinfoblue.png) no-repeat 0px 2px;
+}
+
+#main-left a.return {
+	background: url(../images/main/replayblack.jpg) no-repeat 0px 1px;
+	padding: 0 10px 4px 20px;
+}
+
+#main-left a:hover.return {
+	background: url(../images/main/replayblue.jpg) no-repeat 0px 1px;
+}
+
+#main-left a.edit {
+	background: url(../images/main/bool.jpg) no-repeat 0px 1px;
+	padding: 0 10px 4px 20px;
+}
+
+#main-left a:hover.edit {
+	background: url(../images/main/boolon.jpg) no-repeat 0px 1px;
+}
+
+#header-menu a {
+	width: 87px;
+	height: 37px;
+	line-height: 32px;
+	margin: 0 2px 0 0;
+	display: inline;
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+	background: url(../images/main/menu.jpg) no-repeat left bottom;
+	float: left
+}
+
+#header-menu a:hover {
+	background: url(../images/main/menuon.jpg) no-repeat left bottom;
+	color: #FFF
+}
+
+#header-menu a#menuon {
+	background: url(../images/main/menuon.jpg) no-repeat left bottom;
+	color: #FFF
+}
+/*头像模块背景*/
+#left-top {
+	background: #63605c;
+	width: 194px;
+	height: 65px;
+	padding: 7px 0 0 0px;
+	line-height: 24px;
+	color: #f2f0f5;
+}
+
+#left-top div {
+	width: 44px;
+	padding: 3px 3px 3px 3px;
+	height: 45px;
+	background: url(../images/main/memberbg.jpg) no-repeat left top;
+	float: left
+}
+
+#left-top span {
+	
+	width: 125px;
+	padding: 0 0 0 6px;
+	height: 45px;
+	float: left;
+}
+
+
+div.sdmenu {
+	width: 184px;
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	padding-bottom: 10px;
+	color: #fff;
+}
+/*menu的span颜色*/
+div.sdmenu div {
+	background: #4a4742;
+	overflow: hidden;
+	margin-bottom: 1px;
+	/*字体颜色*/
+	color: #f2f0f5;
+	width: 194px;
+}
+
+div.sdmenu div:first-child {
+	background: #4a4742;
+}
+
+div.sdmenu div.collapsed {
+	height: 35px;
+}
+
+div.sdmenu div span {
+	display: block;
+	padding: 0px 25px;
+	font-weight: bold;
+	background: url(../images/main/expanded.jpg) no-repeat 10px center;
+	cursor: default;
+	cursor: pointer;
+	height: 35px;
+	line-height: 35px;
+}
+
+div.sdmenu div.collapsed span {
+	background-image: url(../images/main/collapsed.jpg);
+}
+
+div.sdmenu div a {
+	padding: 5px 10px 5px 35px;
+	background: #eee;
+	display: block;
+	height: 25px;
+	line-height: 25px;
+	color: #f2f0f5;
+	background: url(../images/main/line.jpg) no-repeat 25px 15px #63605c;
+}
+
+div.sdmenu div a.current {
+	background: #ccc;
+}
+/* menu悬停 */
+div.sdmenu div a:hover {
+	background: url(../images/main/line.jpg) no-repeat 25px 15px #13191969;
+	color: #8c8c8c;
+	text-decoration: none;
+}
+/*menu点击后离开*/
+div.sdmenu div a:focus {
+	background: url(../images/main/line.jpg) no-repeat 25px 15px #310707cc;
+}
+a:focus {outline:none}
+/*footer*/
+#footer {
+	font-size: 12px;
+	width: 100%;
+}
+
+.footer_pad {
+	padding: 5px 9px 0 9px;
+}

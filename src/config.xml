@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<!-- 加载类路径下db.properties -->
+	<properties resource="db.properties"></properties>
+	<typeAliases>
+		<package name="com.entity" />
+	</typeAliases>
+
+	<mappers>
+		<mapper resource="com/mapping/Dept.xml" />
+		<mapper resource="com/mapping/Emp.xml" />
+		<mapper resource="com/mapping/Duty.xml" />
+		<mapper resource="com/mapping/Works.xml" />
+		<mapper resource="com/mapping/Offs.xml" />
+		<mapper resource="com/mapping/Wages.xml" />
+	</mappers>
+</configuration>

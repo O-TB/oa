@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dao.WorksDAO">
+	<insert id="add" parameterType="Works">
+	    insert into works values(null,#{empno},#{name},#{workDate},#{reason},#{publish},#{state})
+	</insert>
+
+	<delete id="del" parameterType="int">
+		delete from works where id=#{id}
+	</delete>
+
+	<select id="findById" resultType="Works" parameterType="int">
+		select * from works where id=#{id}
+	</select>
+
+	<update id="update" parameterType="Works">
+		update works set empno=#{empno},name=#{name},workDate=#{workDate},reason=#{reason},state=#{state} where id=#{id}
+	</update>
+
+	<select id="show" resultType="Works">
+		select * from works
+	</select>
+	
+	<select id="owner" resultType="Works">
+		select * from works where empno=#{empno}
+	</select>
+	
+    <select id="myEmp" resultType="Works" parameterType="String">
+		select works.* from works where publish=#{dept}
+	</select>
+
+	<select id="load" resultType="Works" parameterType="list">
+	   select * from works where publish='财务部' or state  in
+      <foreach collection="list" index="index" item="item" open="(" separator="," close=")">          
+          #{item}
+      </foreach>
+	</select>	
+</mapper>
+

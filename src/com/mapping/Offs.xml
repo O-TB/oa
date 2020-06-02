@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dao.OffDAO">
+	<insert id="add" parameterType="Offs">
+	    insert into offs values(null,#{empno},#{name},#{offDate},#{offTime},#{reason},#{publish},#{dept})
+	</insert>
+
+	<delete id="del" parameterType="int">
+		delete from offs where id=#{id}
+	</delete>
+
+	<select id="findById" resultType="Offs" parameterType="int">
+		select * from offs where id=#{id}
+	</select>
+
+	<update id="update" parameterType="Offs">
+		update offs set empno=#{empno},name=#{name},offDate=#{offDate},offTime=#{offTime},reason=#{reason},publish=#{publish} where id=#{id}
+	</update>
+
+	<select id="show" resultType="Offs">
+		select * from offs
+	</select>
+	<select id="load" resultType="Offs" parameterType="list">
+	   select * from offs where dept='办公室' or publish  in
+      <foreach collection="list" index="index" item="item" open="(" separator="," close=")">          
+          #{item}
+      </foreach>
+	</select>	
+	<select id="owner" resultType="Offs">
+		select * from offs where empno=#{empno}
+	</select>
+    <select id="myEmp" resultType="Offs" parameterType="String">
+		select offs.* from offs where dept=#{dept}
+	</select>
+</mapper>
+
